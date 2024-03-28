@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Manas Kumar Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+.row>.img-fluid rounded b-shadow-a{
+	border-radius: 50%;
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+p>a{
+	border: 2px;
+	border-radius: 10px;
+	background-color: #ffbd39;
+	color:black;
+	font-size: 20px ;
+	padding: 10px;
+
+}
+p{
+	display: flex;
+	column-gap: 20px;
+}
+p>a:hover{
+	background-color:rgb(251, 251, 11);
+	color: black;
+}
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Manas Kumar</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_M.jpg);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Manas Kumar</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						' Student  ',
+						' Software Developer  ',
+						' Programmer  '
+					
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>A Bachelor Of Computer Application Student</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://github.com/Manas-kumar99">GitHub</a> 
+							<a href="https://www.linkedin.com/in/manas-kumar-a4704524a/">linkedin</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/about-me.png" class="img-fluid rounded-circle " alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span>Manas Kumar<span></span></p>
+										<p><span class="title-s">Job Role: </span> <span>Java Developer</span></p>
+										<p><span class="title-s">Experience: </span> <span>Freshers</span></p>
+										<p><span class="title-s">Address: </span> <span>Bihar, India</span></p>
+									  </div>
+									</div>
+								  </div>
+								  <br>
+								<div class="skill-mf ">
+									<p class="title-s m">Skills</p>
+									<span>SQL</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>PYTHON</span> <span class="pull-right">70%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>C Programing</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									<span>C++ Programing </span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Java </span> <span class="pull-right">75%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 76%" aria-valuenow="75" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Data Structure with C</span> <span class="pull-right">60%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									<span>PHP</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									<span>HTML & CSS</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									<span>Telwind CSS </span> <span class="pull-right">75%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									<span>C++ Programing </span> <span class="pull-right">75%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big ">About Me-</h1>
+								<h2 class="mb-4">About Me-</h2>
+								
+								<p>
+									As a dedicated student pursuing a Bachelor's in Computer Applications (BCA) at Purnea University in Purnea, you exhibit a remarkable commitment to academic excellence and a passion for the field of technology. Your diligent approach to learning is evident in your consistent attendance, active participation in class discussions, and thorough engagement with course materials. Not only do you excel in theoretical concepts, but you also demonstrate a strong practical understanding, often applying your knowledge to solve real-world problems. Your professors commend your analytical skills and your ability to grasp complex concepts quickly, making you a valuable asset in group projects and discussions. Moreover, your eagerness to explore new technologies and stay updated with the latest industry trends showcases your proactive attitude towards personal and professional development. Overall, as a student of BCA at Purnea University, you embody the qualities of a driven and ambitious learner, poised to make significant contributions to the field of computer applications in the future 
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Student of Computer Science &amp; (BCA)</span></li>
+									<li class="d-flex"><span>Domain:</span> <span>Web development &amp; Programing</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Bachelor in computer Application</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
+									<!-- <li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI, Looker &amp; Tableau</span></li> -->
+									<li class="d-flex"><span>Other Skills:</span> <span>Editing,  Excel,Ms-Word &amp; PowerPoint</span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Traveling, Travel Photography, Teaching</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="3">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/manas-kumar-a4704524a/" class="btn btn-primary py-3 px-3">LinkedIn</a>
+									<a href="https://github.com/Manas-kumar99" class="btn btn-primary py-3 px-3">GitHub</a></p>
+							
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>As a recent graduate with a Bachelor's degree in Computer Science, I am eager to leverage my theoretical knowledge and practical skills in a dynamic professional environment. Throughout my academic journey, I have acquired a solid foundation in programming languages such as Python, Java, and C++, as well as gained hands-on experience with web development technologies like HTML, CSS, and JavaScript. Additionally, I have completed several projects, including a Restaurant Management system using PHP and Telwin CSS, and a messaging platform named Pakhi developed in Python with Tkinter for the GUI.  I am highly motivated to contribute my enthusiasm and dedication to a team-oriented organization, where I can continue to learn and grow as a professional in the field of technology</p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Tkinter Project</span>
+						<h2>GUI Project</h2>
+						<p class="mt-4">
+							<ul>
+								<li>
+									In my journey as a software developer, I've cultivated significant experience in creating graphical user interfaces (GUIs) using Tkinter, particularly through diverse projects ranging from Restaurant Management software to applications like Digital Clocks, World Clocks, Calculators, and Notepads. In developing the Restaurant Management software, I harnessed Tkinter's robust features to craft an intuitive interface facilitating seamless interaction for users. Implementing functionalities such as order management, inventory tracking, and customer management, I ensured the software met the intricate needs of the restaurant industry while maintaining user-friendliness. Similarly, in projects like Digital Clocks and World Clocks, I leveraged Tkinter's versatility to design visually appealing interfaces displaying accurate time across various time zones. Crafting functionalities to update time dynamically and customize display settings, I aimed to provide users with a reliable timekeeping solution. Additionally, through projects like Calculators and Notepads, I demonstrated proficiency in creating simple yet effective tools for everyday use, prioritizing functionality and user experience. These projects have not only honed my skills in Tkinter GUI development but also deepened my understanding of software design principles and user-centric development. I'm eager to apply this wealth of experience and expertise to contribute effectively to future software projects.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Website Design</span>
+						<h2>Web development</h2>
+						<p class="mt-4">
+							<ul>
+								<li>Throughout my journey as a web developer, I've amassed extensive experience in crafting responsive and visually appealing web applications and designs using HTML, CSS, JavaScript, and Tailwind CSS. Leveraging HTML's structural elements and semantic markup, I've developed robust foundations for web projects, ensuring accessibility and search engine optimization. CSS has been instrumental in styling these projects, allowing me to create engaging layouts, apply custom designs, and ensure consistent branding across web pages. Additionally, JavaScript has empowered me to incorporate dynamic functionality into my web applications, from client-side validation to interactive user interfaces. Moreover, integrating Tailwind CSS into my workflow has expedited the design process, enabling rapid prototyping and easy customization through its utility-first approach. Whether it's building interactive forms, implementing animations, or optimizing for mobile responsiveness, my experience in web development and design encompasses a diverse range of projects, each tailored to meet the unique needs and preferences of users. I'm enthusiastic about continuing to push the boundaries of web technology and delivering exceptional user experiences through innovative and thoughtfully crafted web solutions.</li>
+								<br><br><br>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">Bachelor in Computer Application </span>
+    					<h2>2021-2024</h2>
+    					<span class="position">Purnea Collage Punea Bihar</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">Intermediate Exam With PCM</span>
+    					<h2> 2019-2021</h2>
+    					<span class="position">Purnea collage Purnea Bihar</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="https://docs.google.com/document/d/1Iq0tPqkcNmMbft2bRvzSlk8okjBXP9WMnh7EFN3h2QU/edit?usp=sharing" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+			<br>
+			<br>
+            <p class="ml-10">BELOW ARE THE SOME PROJECTS USING PYTHON HTML CSS JAVASCRIPT TKINTER GUI SQL PHP -</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="#" class="block-20 zoom-effect" style="background-image: url('images/Res.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="">Restaurant Management</a></h3>
+                <p>Resturent Management System software to manage the customer detail and their Billing detail also.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="#" class="block-20 zoom-effect" style="background-image: url('images/Stu.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="#">Student Management</a></h3>
+			Student Management software that deal with the tracking of Student detail as Well as there Academic Result </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="#" class="block-20 zoom-effect" style="background-image: url('images/pytube.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="#">Pytube Software</a></h3>
+                <p>Pytube Software is a software that gives user an advantage to download any youtube video whether it is Paid or Free in their Heigher Resolution </p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="#" class="block-20 zoom-effect" style="background-image: url('images/pakhi.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main">Pakhi Messaging Service</a></h3>
+				  <p>Pakhi is a web software which is using to communicate like Gmail using Php Sql and Telwind css alo.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="#" class="block-20 zoom-effect" style="background-image: url('images/digitalClock.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="#">Digital Clocks</a></h3>
+				  <p>Digital clock is made of using tkinter pythone . it shows the time in digital format ..</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="#" class="block-20 zoom-effect" style="background-image: url('images/Notpad.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="#">Notpad & Calculator</a></h3>
+				  <p>Digital Notpad and Calcultaor software is being made with both pythone Tkinter as well as Html Css using JavaScript..</p>
+				</div>
+			  </div>
+			</div>
+		 </div>
+	  </div>
+    </section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="5">0</strong>
+                <span>Project</span>
+              </div>
+            </div>
+          </div>
+
+     
+        </div>
+      </div>
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4> I love to solve programing challenges&amp; And i love to be the part of this coding world .. </h4>
+						<br>
+						<p><a href="https://github.com/Manas-kumar99" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <!-- <p>Below are the details to reach out to me!</p> -->
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h4 class="mb-4"> <a href="https://www.bing.com/ck/a?!&&p=de71092a0645d2bfJmltdHM9MTcxMTQ5NzYwMCZpZ3VpZD0yNWJhYmVhNS1hYjRkLTYzY2YtMTQzNi1hZDFiYWFkNjYyNTgmaW5zaWQ9NjE1MA&ptn=3&ver=2&hsh=3&fclid=25babea5-ab4d-63cf-1436-ad1baad66258&u=a1L21hcHM_Jm1lcGk9MjR-flRvcE9mUGFnZX5MYXJnZU1hcExpbmsmdHk9MTgmcT1QdXJuaWElMkMlMjBCaWhhciZzYXRpZD1pZC5zaWQlM0EzMjllMWRlZC04ZWJkLTY4MDgtOTZiZC1mOWNmNzIzNmIwZDEmdmRwaWQ9NzQyMDYwMjY1NzEwMzkzNzUzNyZtYj0yNS44MDA1MzN-ODcuNDM1Nzc2fjI1LjcyMTQ0OX44Ny41NDQ4MjMmcHBvaXM9MjUuNzYwOTkxMDk2NDk2NTgyXzg3LjQ5MDI5OTIyNDg1MzUyX1B1cm5pYSUyQyUyMEJpaGFyX34mY3A9MjUuNzYwOTkxfjg3LjQ5MDI5OSZ2PTImc1Y9MSZGT1JNPU1JUkUmcXB2dD1sb2NhdGlvbitvZisrcHVybmVh&ntb=1">Address</a></h4>
+	           
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4"> <a href="tel:923402416">+91 Contact Number</a></h3>
+	           
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4"> <a href="manasjha.mj@gmail.com">Email Address</a></h3>
+	           
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4"> <a href="https://docs.google.com/document/d/1Iq0tPqkcNmMbft2bRvzSlk8okjBXP9WMnh7EFN3h2QU/edit?usp=sharing">Download Resume</a></h3>
+	           
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/gfpktdoxHs7gAhRy5" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <li class="ftco-animate"><a href="www.youtube.com/@mjvideos3503"><span class="icon-youtube"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/manas-kumar-a4704524a/"><span class="icon-linkedin"></span></a></li>  
+					  <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.fb.com/l/6lp1kJRRR"><span class="icon-facebook"></span></a></li>
+				      <li class="ftco-animate"><a href="https://www.instagram.com/manajha46?igsh=YzlijYTk1ODg3Zg=="><span class="icon-instagram"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->Thanks a lot for visiting my Portfolio website ........
+				<br>
+				with love --Manas Kumar
+	<!-- Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> -->
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
